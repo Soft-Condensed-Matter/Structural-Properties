@@ -16,3 +16,13 @@ distribution function and the approaches of Henderson and Tago. This procedure
 requeries the contact value of g(r), and the values at the potential
 discontinuities, this values are computed with an extrapolation 
 of the g(r) present data employing a third degree Lagrange polynomial function
+
+Code: PressTW.f90
+Description: Computes the pressure for a triangular well fluid using the radial
+distribution function separating the potential contributions on the hard-sphere 
+and triangular contribs, the first one is computed with the Carnahan-Starling 
+expresion and the second one explicitly computing the integral of potential 
+derivative times the radial distribution function. This procedure requeries the 
+contact value of g(r), which is computed using a third degree Lagrange polynom 
+to extrapolate the value. Hence, provide the file with the g(r) data as well as
+interaction range (lambda), density and temperatures is mandatory.
